@@ -260,7 +260,6 @@ input {
 }
 .chambre:hover {
   display: none;
-  cursor: pointer;
 }
 .chambre:hover + .room {
   cursor: pointer;
