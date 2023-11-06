@@ -277,20 +277,25 @@ body{
 .room{
     display: none;
     cursor: pointer;
+    
+    i{
+        font-size: 25px;
+}
 }
 
 .chambre{
     cursor: pointer;
+    i{
+        font-size: 25px;
+    }
     &:hover {
         display: none;
-        
-        
-
+        cursor: pointer;
     }
 
 
-    &:hover + .room {
-    
+    &:hover + .room  {
+        cursor: pointer;
         display: flex;
         color:rgb(147, 22, 166, 0.9);
 
@@ -303,19 +308,7 @@ body{
     display: flex;
     align-items: center;
     height: 80px;
-
-    i {
-        font-size: 25px;
-        
-    }
-
 }
-
-
-
-
-
-
 
 .bugarrow {
     display: flex;
@@ -417,9 +410,6 @@ body{
         font-family:'Shrikhand', serif;
     }
 
-}
-.group{
-    
 }
 
     

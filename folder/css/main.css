@@ -248,14 +248,22 @@ input {
   display: none;
   cursor: pointer;
 }
+.room i {
+  font-size: 25px;
+}
 
 .chambre {
   cursor: pointer;
 }
+.chambre i {
+  font-size: 25px;
+}
 .chambre:hover {
   display: none;
+  cursor: pointer;
 }
 .chambre:hover + .room {
+  cursor: pointer;
   display: flex;
   color: rgba(147, 22, 166, 0.9);
 }
@@ -264,9 +272,6 @@ input {
   display: flex;
   align-items: center;
   height: 80px;
-}
-.d i {
-  font-size: 25px;
 }
 
 .bugarrow {
