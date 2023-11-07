@@ -93,6 +93,7 @@ body{
 
 .wrapper{
     display: flex;
+    width: 420px;
     flex-direction: column;
     gap: 20px;
     margin-left: 20px;
@@ -328,6 +329,7 @@ body{
 
 .start {
     margin-left: 20px;
+    width: 110px;
 
     p {
         width: 100px;
@@ -340,6 +342,7 @@ body{
 
 .startone {
     margin-left: 20px;
+    width: 110px;
 
     p {
         width: 110px;
@@ -684,5 +687,54 @@ footer {
     width: 100%;
     height: 100%;
     display: flex;
+
+}
+
+@media screen and (min-width:421px) {
+    .navlo{
+        margin: 0px auto;
+        width: 100%;
+        
+    }
+    .wrapper{
+        margin: 0px auto;
+    }
+    .part{
+        margin: 0px auto;
+        background: none
+    } 
+    .bugarrow{
+        margin: 0 auto;
+    }
+    .longway{
+        margin: 0 auto;
+    }
+    .start{
+        display: flex;
+        margin: 0 auto;
+        justify-content: flex-start;
+    }
+    .startone{
+        display: flex;
+        margin: 0 auto;
+        justify-content: flex-start;
+        
+    }
+    .cape{
+        margin: 0 auto;
+    }
+    .command{
+        margin: 0 auto;
+    }
+    .box{
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+
 
 }
