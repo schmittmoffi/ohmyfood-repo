@@ -691,19 +691,19 @@ footer {
 
 }
 #loader {
-  position: absolute;
-  width: 420px;
-  height: 2200px;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   background: rgb(43, 42, 42, 1);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
   animation: hidden 4s forwards;
+  z-index: 100;
   
   }
   #loader::after{
-    position: absolute;
+    
     content: "";
     width: 100px;
     height: 100px;
@@ -712,9 +712,7 @@ footer {
     border-bottom-color: $secondary-color;
     border-radius: 50%;
     animation: spin 5s forwards;
-    z-index: 100;
-    align-self: center;
-    top: 250px;
+    
     
   }
   
@@ -773,6 +771,9 @@ footer {
         margin: 0 auto;
     }
     .box{
+        margin: 0 auto;
+    }
+    #loader{
         margin: 0 auto;
     }
 
