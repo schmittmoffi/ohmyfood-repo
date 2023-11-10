@@ -698,7 +698,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: hidden 4s forwards;
+  animation: hidden 5s forwards;
   z-index: 100;
   
   }
@@ -718,15 +718,15 @@ footer {
   
   @keyframes spin {
     0% { transform: rotate(0deg);
-          opacity: 1; }
+           }
     100% { transform: rotate(360deg);
-           opacity: 0; }
+            }
   }
 
 
   @keyframes hidden{
-    0%{ display: flex;}
-    100%{display: none;}
+    0%{ opacity: 1;}
+    100%{opacity: 0;}
   }
   
 
