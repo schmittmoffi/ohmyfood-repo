@@ -248,7 +248,7 @@ input {
 .room {
   display: none;
   cursor: pointer;
-  transition: all 1s;
+  transition: all 2s;
 }
 .room i {
   font-size: 25px;
@@ -558,7 +558,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: hidden 5s forwards;
+  animation: hidden 3s forwards;
   z-index: 100;
 }
 
@@ -570,7 +570,7 @@ footer {
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
   border-radius: 50%;
-  animation: spin 5s forwards;
+  animation: spin 3s infinite;
 }
 
 @keyframes spin {
@@ -583,10 +583,10 @@ footer {
 }
 @keyframes hidden {
   0% {
-    opacity: 1;
+    display: flex;
   }
   100% {
-    opacity: 0;
+    display: none;
   }
 }
 @media screen and (min-width: 421px) {
