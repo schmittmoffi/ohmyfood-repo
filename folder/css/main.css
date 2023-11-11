@@ -245,10 +245,19 @@ input {
   margin-top: 0px;
 }
 
+.test {
+  display: none;
+  color: red;
+  cursor: pointer;
+}
+.test i {
+  font-size: 25px;
+}
+
 .room {
   display: none;
   cursor: pointer;
-  transition: all 2s;
+  color: rgba(147, 22, 166, 0.9);
 }
 .room i {
   font-size: 25px;
@@ -265,8 +274,6 @@ input {
 }
 .chambre:hover + .room {
   cursor: pointer;
-  display: flex;
-  color: rgba(147, 22, 166, 0.9);
 }
 
 .d {
@@ -560,6 +567,7 @@ footer {
   align-items: center;
   animation: hidden 3s forwards;
   z-index: 100;
+  pointer-events: none;
 }
 
 #loader::after {
@@ -583,10 +591,13 @@ footer {
 }
 @keyframes hidden {
   0% {
-    display: flex;
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
   }
   100% {
-    display: none;
+    opacity: 0;
   }
 }
 @media screen and (min-width: 421px) {
