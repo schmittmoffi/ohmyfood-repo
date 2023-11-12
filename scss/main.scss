@@ -302,37 +302,49 @@ input {
 
 }
 
-.test {
-    display: none;
-    color: red;
-
-    cursor: pointer;
 
 
-    i {
-        font-size: 25px;
-    }
 
-}
+
+
+
 
 .room {
     display: none;
     cursor: pointer;
-    color: rgb(147, 22, 166, 0.9);
+    background: linear-gradient(to top, rgb(136, 84, 185),rgb(224, 114, 224)  50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+ 
+    
+   
+   
     
 
     i {
         font-size: 25px;
+        
+        
     }
 }
 
+
+
 .chambre {
     cursor: pointer;
+    font-size: 25px;
+   
+   
     
 
     i {
         font-size: 25px;
-    }
+       
+           
+          }
+  
 
     &:hover {
 
@@ -342,11 +354,13 @@ input {
 
     &:hover +.room {
         cursor: pointer;
-
+        display: flex;
         
+            
     }
 
 }
+
 
 
 .d {
@@ -459,8 +473,29 @@ input {
     }
 
 }
+#lumiere{
+    display: none;
+    cursor: pointer;
+    background: linear-gradient(to top, rgb(136, 84, 185),rgb(224, 114, 224)  50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+#light {
+    cursor: pointer;
+    &:hover {
+
+        display: none;
+    }
 
 
+    &:hover + #lumiere {
+        cursor: pointer;
+        display: flex;   
+    }
+
+}
 
 .box {
     display: flex;
