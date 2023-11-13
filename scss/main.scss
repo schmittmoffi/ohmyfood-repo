@@ -301,72 +301,120 @@ input {
     }
 
 }
-
-
-
-
-
-
-
-
 .room {
     display: none;
     cursor: pointer;
+    font-size: 25px;
     background: linear-gradient(to top, rgb(136, 84, 185),rgb(224, 114, 224)  50%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
- 
     
-   
-   
     
 
-    i {
-        font-size: 25px;
-        
-        
-    }
 }
-
-
-
-.chambre {
-    cursor: pointer;
+.chambre{
     font-size: 25px;
-   
-   
+}
+
+.d:hover .chambre{
+    opacity: 0;
+    cursor: pointer;
     
-
-    i {
-        font-size: 25px;
-       
-           
-          }
+    
+  }
   
-
-    &:hover {
-
-        display: none;
-    }
-
-
-    &:hover +.room {
-        cursor: pointer;
-        display: flex;
-        
-            
-    }
-
+.d:hover .room{
+    display: flex !important;
+    cursor: pointer;
+    animation: show 500ms forwards;
 }
 
 
+
+
+  
+@-webkit-keyframes show {
+    0% {
+        opacity: 0.1;
+        font-size: 5px;
+      }
+      25%{
+          opacity: 0.3;
+          font-size: 10px;
+      }
+      50%{
+          opacity: 0.5;
+          font-size: 15;
+      }
+      75%{
+          opacity: 0.8;
+          font-size: 20px;
+      }
+      
+      100% {
+        opacity: 1;
+        font-size: 25px;
+      } 
+  }
+  @-moz-keyframes show {
+    0% {
+        opacity: 0.1;
+        font-size: 5px;
+      }
+      25%{
+          opacity: 0.3;
+          font-size: 10px;
+      }
+      50%{
+          opacity: 0.5;
+          font-size: 15;
+      }
+      75%{
+          opacity: 0.8;
+          font-size: 20px;
+      }
+      
+      100% {
+        opacity: 1;
+        font-size: 25px;
+      } 
+  }
+
+    
+  @keyframes show {
+    0% {
+      opacity: 0.1;
+      font-size: 5px;
+    }
+    25%{
+        opacity: 0.3;
+        font-size: 10px;
+    }
+    50%{
+        opacity: 0.5;
+        font-size: 15;
+    }
+    75%{
+        opacity: 0.8;
+        font-size: 20px;
+    }
+    
+    100% {
+      opacity: 1;
+      font-size: 25px;
+    } 
+  }
+
+  
 
 .d {
     display: flex;
     align-items: center;
     height: 80px;
+    
+
 }
 
 .bugarrow {
@@ -467,35 +515,45 @@ input {
     }
 
     p {
-        font-size: 35px;
+        font-size: 25px;
 
         font-family: 'Shrikhand', serif;
     }
 
 }
-#lumiere{
+
+
+#lumiere {
     display: none;
     cursor: pointer;
+    font-size: 25px;
     background: linear-gradient(to top, rgb(136, 84, 185),rgb(224, 114, 224)  50%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
+    
+    
+
 }
-#light {
+#light{
+    font-size: 25px;
+}
+
+.dish-title:hover #light {
+    opacity: 0;
     cursor: pointer;
-    &:hover {
-
-        display: none;
-    }
-
-
-    &:hover + #lumiere {
-        cursor: pointer;
-        display: flex;   
-    }
-
+    
+  }
+  
+.dish-title:hover #lumiere{
+    display: flex;
+    cursor: pointer;
+    animation: show 500ms forwards;
 }
+
+
+
 
 .box {
     display: flex;
