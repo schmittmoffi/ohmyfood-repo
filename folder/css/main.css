@@ -282,7 +282,7 @@ input {
   }
   50% {
     opacity: 0.5;
-    font-size: 15;
+    font-size: 15px;
   }
   75% {
     opacity: 0.8;
@@ -304,7 +304,7 @@ input {
   }
   50% {
     opacity: 0.5;
-    font-size: 15;
+    font-size: 15px;
   }
   75% {
     opacity: 0.8;
@@ -326,7 +326,7 @@ input {
   }
   50% {
     opacity: 0.5;
-    font-size: 15;
+    font-size: 15px;
   }
   75% {
     opacity: 0.8;
