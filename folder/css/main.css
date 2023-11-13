@@ -249,7 +249,7 @@ input {
   display: none;
   cursor: pointer;
   font-size: 25px;
-  background: linear-gradient(to top, rgb(136, 84, 185), rgb(224, 114, 224) 50%);
+  background: linear-gradient(to bottom, rgb(136, 84, 185), rgb(224, 114, 224) 50%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -423,7 +423,7 @@ input {
   display: none;
   cursor: pointer;
   font-size: 25px;
-  background: linear-gradient(to top, rgb(136, 84, 185), rgb(224, 114, 224) 50%);
+  background: linear-gradient(to bottom, rgb(136, 84, 185), rgb(224, 114, 224) 50%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -577,7 +577,7 @@ input {
 .command {
   width: 200px;
   height: 50px;
-  background: linear-gradient(to top, rgb(136, 84, 185), rgb(224, 114, 224) 50%);
+  background: linear-gradient(to bottom, rgb(136, 84, 185), rgb(224, 114, 224) 50%);
   color: #fff;
   margin: 0 auto;
   display: flex;
